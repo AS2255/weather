@@ -11,7 +11,7 @@ document.getElementById("search").addEventListener("keyup", a => {
     search(a.target.value)
 }
 );
-var days = ["Saturday","Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 function displayCurrent(a, t) {
     if (null != t) {
