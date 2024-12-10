@@ -58,4 +58,19 @@ function displayAnother(a) {
                 </div>`;
     document.getElementById("forecast").innerHTML += t
 }
-search("cairo");
+let Geo = {}
+if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success,error);
+}else {
+    alert('Geolocation is not supported');
+}
+function error() {
+    alert("We couldn't find you!");
+    search("cairo");
+}
+function success(position) {
+        Geo.lat = position.coords.latitude;
+        Geo.lng = position.coords.longitude;
+        console.log(Geo.lat + "," + Geo.lng);
+        search(Geo.lat + "," + Geo.lng);    
+}
