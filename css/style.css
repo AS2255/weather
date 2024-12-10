@@ -1,0 +1,198 @@
+/* general */
+body{
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+/* navbar sec */
+.logo-title{
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-size: 1rem ;
+}
+.logo{
+    vertical-align: middle;
+}
+img{
+    vertical-align: middle;
+    display: inline-block;
+}
+h1{
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: normal;
+}
+.small{
+    font-size: .625rem;
+    font-weight: 300;
+}
+nav #nav-menu .nav-item a{
+    color: #ffffff;
+    font-weight: 400;
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+nav #nav-menu .nav-item a.active,
+nav #nav-menu .nav-item:hover a
+{
+    color: #009ad8;
+    border-color: #009ad8;
+}
+/* mobile */
+.collapse.show #nav-menu{
+    background: #262936;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.collapse.show #nav-menu .nav-item{
+    border-bottom: 1px solid #ffffff1a;
+}
+.collapse.show #nav-menu .nav-item a{
+    padding: 1.25rem;
+    display: block;
+}
+.collapse.show #nav-menu .nav-item a {
+    border: 0;
+}
+/* header sec */
+.hero{
+    background-image: url(../image/banner.png);
+    background-size:cover;
+    min-height: 18.75rem;
+}
+.location{
+    margin-bottom: 70px;
+}
+form #search, form #subscribe, form .btn{
+    border: 0;
+    color: #ffffff;
+    border-radius: 1.875rem;
+    -webkit-border-radius: 1.875rem;
+    -moz-border-radius: 1.875rem;
+    -ms-border-radius: 1.875rem;
+    -o-border-radius: 1.875rem;
+}
+form #search, form #subscribe{
+    background-color: #1e202b;
+    padding: 15px 50px 15px 20px ;
+}
+form #search:focus, form #subscribe:focus{
+    box-shadow: 0 0 0 0 transparent;
+}
+form #search::placeholder, form #subscribe::placeholder{
+    color:#767883 ;
+}
+form .btn{
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    padding: 0 40px;
+    background-color:#009AD8 ;
+}
+form .btn:hover{
+    background-color:#009AD8 ;
+}
+/* footer sec */
+.footer{
+    background-color: #262936;
+}
+.footer form .btn{
+    padding: 0 1.25rem;
+}
+.social-icons a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+    background-color: #1e202b;
+    text-align: center;
+    line-height: 2;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.social-icons a:hover{
+    background-color: #009AD8;
+    color: #ffffff;
+}
+/* main sec */
+#forecast{
+    background-color: #323544;
+    margin-top: -7.375rem;
+    margin-bottom: 3.125rem;
+    border-radius: .625rem;
+    -webkit-border-radius: .625rem;
+    -moz-border-radius: .625rem;
+    -ms-border-radius: .625rem;
+    -o-border-radius: .625rem;
+    overflow: hidden;
+}
+.forecast-header{
+    background-color: #0000001a;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.today .forecast-content{
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    text-align: left;
+}
+.forecast-content{
+    padding: 3.125rem 1.25rem .625rem;
+    text-align: center;
+}
+.today .location{
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.forecast-content .degree{
+    font-size: 1.7142857143em;
+    color: #ffffff;
+    font-weight: 700;
+}
+.today .degree .num{
+    font-size: 5.625rem;
+    margin-right: 30px;
+}
+.custom{
+    color: #009ad8;
+    margin: 20px 0;
+}
+.forecast-icon{
+    display: inline-block;
+    height: 50px;
+    margin-bottom: 1.25rem;
+}
+.today span{
+    margin-right: 1.25rem;
+}
+.today span img{
+    margin-right: .3125rem;
+}
+#forecast .forecast:nth-child(even) {
+    background-color: #262936;
+}
+.forecast-content small{
+    font-size: 1.1428571429em;
+}
