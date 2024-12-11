@@ -73,5 +73,5 @@ function success(position) {
         Geo.lng = position.coords.longitude;
         let loc = Geo.lat + "," + Geo.lng
         console.log(Geo.lat + "," + Geo.lng);
-        search (loc);    
+        search (Geo.lat + "," + Geo.lng);    
 }
