@@ -33,7 +33,7 @@ function displayCurrent(a, t) {
                         <div class="custom">${t.condition.text}</div>\n
                             <span><img src="image/icon-umberella.png" alt="">20%</span>\n\t\t\t\t\t\t\t\t
                             <span><img src="image/icon-wind.png" alt="">18km/h</span>\n\t\t\t\t\t\t\t\t
-                            <span><img src="images/icon-compass.png" alt="">East</span>\n    
+                            <span><img src="image/icon-compass.png" alt="">East</span>\n    
                 </div>\n
             </div>`;
         document.getElementById("forecast").innerHTML = n
