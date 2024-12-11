@@ -60,7 +60,7 @@ function displayAnother(a) {
 }
 let Geo = {}
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success,error);
+    navigator.geolocation.watchPosition(success,error);
 }else {
     alert('Geolocation is not supported');
 }
